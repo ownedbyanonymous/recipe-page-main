@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    color: hsl(30, 10%, 34%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1.3125rem;
+    margin-top: 1.1875rem;
+
+}
+
+/* Font classes */
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.outfit-regular{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-semi-bold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: semi-bold;
+}
+
+.outfit-bold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+  }
+
+/* Recipe Card */
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    display: flex;
+}
+
+article{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Image container */
+.card-banner img{
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 2.25rem;
+    margin-bottom: 1.78125rem;
+}
+
+/* Header text */
+header {
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    p{
+        padding-bottom: 1rem;
+    }
+
+}
+
+/* Preparation time section */
+.preparation-time{
+    background-color: hsl(330, 100%, 98%);
+    padding-top: 1.1875rem;
+    padding-left: 1.8125rem;
+    padding-bottom: 1.75rem;
+    border-radius: 7px;
+    /* margin-top:0.5rem; */
+    margin-bottom: 1.0625rem;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+
+    h3{
+        color:  hsl(332, 51%, 32%);
+        margin-bottom: 0.75rem;
+    }
+
+    ul{
+        li:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+        li::marker{
+            color: hsl(332, 51%, 32%);
+        }
+    }
+}
+
+section ul, section ol{
+    padding-left: 1.5rem;
+    padding-bottom: 1.28125rem;
+    list-style: square;
+
+    li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    li::marker{
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+
+    li{
+        padding-left: 1rem;
+    }
+}
+
+.nutrition p{
+    margin-top: 1.3125rem;
+    margin-bottom: 1.3125rem;
+}
+
+/*
+    The border-collapse property sets whether table borders should collapse into a single border 
+    or be separated as in standard HTML.
+    border-collapse: collapse;
+    Borders are collapsed into a single border when possible (border-spacing and empty-cells properties have no effect)
+*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2.125rem;
+}
+
+
+td{
+    padding-left: 1.125rem;
+    text-align: left;
+}
+
+td:not(:last-child){
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 0.6875rem;
+    padding-top: 0.6875rem
+}
+
+tr td:nth-child(2){
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+@media (375px<= width <= 700px ) {
+
+    header, .preparation-time, .ingrdients, .instruction, .instruction{
+        flex-shrink: 3;
+    }
+
+    section ul, section ol{
+        padding-left: 1rem;
+
+        li{
+            padding-left: 0rem;
+        }
+    }
+
+    header{
+        p{
+            width: 90%;
+        }
+    }
+
+    .preparation-time{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        h3{
+            max-width: 50%;
+        }
+    }
+
+    .ingrdients{
+        width: 90%;
+    }
+}
+
+
