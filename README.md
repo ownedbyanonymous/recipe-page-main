@@ -27,7 +27,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/ownedbyanonymous/recipe-page-main)
-- Live Site URL: [Live site URL here](https://vercel.com/anonymous-projects-2a5e58cd/recipe-page-main-ka9w)
+- Live Site URL: [Live site URL here](https://recipe-page-main-ka9w.vercel.app/)
 
 ## My process
 
