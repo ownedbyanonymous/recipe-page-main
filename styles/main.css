@@ -145,21 +145,21 @@ section ul, section ol{
     Borders are collapsed into a single border when possible (border-spacing and empty-cells properties have no effect)
 */
 table{
-    width: 100%;
-    border-collapse: collapse;
     margin-bottom: 2.125rem;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 
 td{
     padding-left: 1.125rem;
     text-align: left;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 td:not(:last-child){
-    border-bottom: 1px solid hsl(30, 18%, 87%);
-    padding-bottom: 0.6875rem;
-    padding-top: 0.6875rem
+    /* padding-bottom: 0.6875rem; */
+    padding-top: 0.6875rem;
 }
 
 tr td:nth-child(2){
@@ -167,37 +167,17 @@ tr td:nth-child(2){
     font-weight: 600;
 }
 
-@media (375px<= width <= 700px ) {
-
-    header, .preparation-time, .ingrdients, .instruction, .instruction{
-        flex-shrink: 3;
+@media (300px<= width <= 700px ) {
+    main{
+        width: 100%;
     }
 
-    section ul, section ol{
-        padding-left: 1rem;
-
-        li{
-            padding-left: 0rem;
-        }
-    }
-
-    header{
-        p{
-            width: 90%;
-        }
+    article{
+        width: 80%;
     }
 
     .preparation-time{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-
-        h3{
-            max-width: 50%;
-        }
-    }
-
-    .ingrdients{
-        width: 90%;
+        padding-right: 1rem;
     }
 }
 
